@@ -87,7 +87,7 @@ class NMT(nn.Module):
         self.h_projection = nn.Linear(hidden_size * 2 , hidden_size, bias=False)
         self.c_projection = nn.Linear(hidden_size * 2, hidden_size, bias=False)
 
-        # Not sure of the next three lines
+
         self.att_projection = nn.Linear(hidden_size * 2, hidden_size, bias=False)
 
         self.combined_output_projection = nn.Linear(hidden_size * 3, hidden_size, bias=False)
